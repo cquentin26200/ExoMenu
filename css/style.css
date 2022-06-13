@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a, .active {
+    border: 1px solid black;
+    display: block;
+    width: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    height: 100%;
+}
+
+.menu a {
+    border-top: none;
+    color: black;
+}
+
+.hide, .show {
+    overflow: hidden;
+    transition: all .25s;
+}
+
+.hide {
+    height: 0;
+}
+
+.show {
+    height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .active {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        height: 100%;
+    }
+}
